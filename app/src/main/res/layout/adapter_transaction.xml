@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="5dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            tools:text="200.000"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            />
+        
+        <TextView
+            android:id="@+id/tv_invoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/tv_total"
+            tools:text="090421000001"
+            />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tv_invoice"
+            tools:text="08-March-2021"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tv_date"
+            android:background="@color/design_default_color_primary"
+            android:padding="10dp"
+            android:text="Lihat Detail"
+            android:textColor="@color/white"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

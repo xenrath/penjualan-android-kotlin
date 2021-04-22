@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_product"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        tools:text="Bakso mana lagi?"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:gravity="center"
+        />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/riv_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/img_no_image"
+        app:riv_corner_radius="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        tools:text="Rp. 20.000"
+        android:textColor="@color/design_default_color_primary"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_stock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        tools:text="Stok (10)"
+        android:textSize="12sp"
+        android:gravity="center"
+        />
+
+</LinearLayout>

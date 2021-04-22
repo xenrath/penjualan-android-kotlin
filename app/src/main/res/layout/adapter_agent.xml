@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:paddingEnd="5dp"
+            android:text="&#8942;"
+            android:textColor="@color/purple_700"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textStyle="bold"
+            />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/riv_image"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/img_no_image"
+            app:riv_corner_radius="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_store"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/riv_image"
+            android:layout_toStartOf="@+id/tv_option"
+            android:text="Nama Toko"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_store"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@+id/riv_image"
+            android:text="Lokasi"
+            android:textSize="12sp"
+            android:drawableStart="@drawable/ic_location"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
